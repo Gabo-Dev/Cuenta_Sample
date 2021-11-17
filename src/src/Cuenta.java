@@ -14,6 +14,8 @@ public class Cuenta {
     private long accNum;
     public Cuenta(int saldo, long num)
     {
+        this.saldo=saldo;
+        this.accNum=num;
     }
     public int getBalance()
     {
@@ -21,8 +23,10 @@ public class Cuenta {
     }
     public void depositar(int cantidad)
     {
+        this.saldo=0;
     }
     public void retirar(int cantidad)
     {
+        this.saldo=0;
     }
 }
